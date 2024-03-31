@@ -47,9 +47,25 @@ removeUser(users, 'akagen') // undefined
 //username is the key
 //'' is the string
 
-function removeUser(usersArray, username) {
-  //function to remove an object from the array
-  return usersArray.findIndex(function (user) {
+// function removeUser(usersArray, username) {
+//   //function to remove an object from the array
+//   return usersArray.findIndex(function (user) {
+//     return user.username === username;
+//   });
+// } //This will loop thru each object and will return the index placement of key and string if username is strictly equal to username.
+
+//we need to remove the key and string if username is strictly equal to username
+
+/*
+function removeUser(userArray, username) {
+  //create a variable that stores array method findIndex of the userArray
+  let foundIndex = userArray.findIndex(function (user) {
+    //return username (object) if not found then return undefined
     return user.username === username;
   });
-} //This will loop thru each object and will return the index placement of key and string if username is strictly equal to username.
+  //loop thru with a boolean of is -1 is returned then what should be done
+  if (foundIndex === -1) return; //if array Method of foundIndex strictly equals -1 return;
+}//removeUser(users, 'msith') // undefined
+*/
+
+//
