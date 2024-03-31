@@ -18,7 +18,13 @@ function findUserByUsername(usersArray, username) {
   //function should return the first object with the key of username that matches the string passed to the function.
   //first object = usersArray
   //need to return the first argument using dot notation to find information
-  return usersArray.find(function (user) {});
+  return usersArray.find(function (user) {
+    //return the first element found in the object
+    //user was added as a parameter to pass thru an argument were the function would be applied to
+    //return if the object is not found then its undefined
+    //use of strict equality (===) will return a boolean result based upon object are the same
+    return user.username === username; //return array object and if the object from username strictly equals username, then return true.
+  });
 }
 
 /*
