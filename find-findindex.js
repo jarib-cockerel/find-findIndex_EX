@@ -68,4 +68,14 @@ function removeUser(userArray, username) {
 }//removeUser(users, 'msith') // undefined
 */
 
-//
+//remove the key and string which we need return an array method to splice, remove, both keyword and string when called
+
+function removeUser(userArray, username) {
+  let foundIndex = userArray.findIndex(function (user) {
+    return user.username === username;
+  });
+
+  if (foundIndex === -1) return;
+
+  return userArray.splice(foundIndex, 1)[0];
+}
