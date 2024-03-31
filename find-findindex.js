@@ -14,14 +14,11 @@ findUserByUsername(users, 'taco') // undefined
 */
 
 function findUserByUsername(usersArray, username) {
-  //findUserByUsername is the name of the function
-  //usersArray is the parameter of the function
-  //username is another parameter of the function
-  //need to return the first object with the key of username that matches the srong passed to the function
-  return usersArray.find(function (user) {
-    //if the object is not found, return undefined
-    return user.username === username;
-  });
+  //The function is already written out called findUserByUsername and has two arguments stored as parameters
+  //function should return the first object with the key of username that matches the string passed to the function.
+  //first object = usersArray
+  //need to return the first argument using dot notation to find information
+  return usersArray.find(function (user) {});
 }
 
 /*
